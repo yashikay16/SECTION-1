@@ -1,0 +1,51 @@
+.carousel .carousel-indicators button {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+ }
+a{
+    color: antiquewhite !important;
+    font-size: large !important;
+}
+ body{
+    background-color: rgb(59, 58, 58) !important; 
+ }
+ li{
+    font-family: 'IM Fell DW Pica', serif !important;
+    letter-spacing: 2px;
+ }
+ h4,h5,h6,span{
+    letter-spacing: 2px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: antiquewhite !important;
+ }
+ h2{
+    font-family: 'Playfair Display', serif !important;
+    color: bisque !important;
+ }
+ h1{
+    
+   font-family: 'Syne Tactile',cursive !important;
+   color: rgb(243, 243, 142) !important;
+   font-size: 55px !important;
+   font-weight: bold !important;
+ }
+
+ .div0{
+     margin-top: 40%;
+ }
+.card-body{
+    
+  
+   
+    height: 50vh;
+}
+
+.card{
+    
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 7px rgba(175, 174, 174, 0.295);
+}
