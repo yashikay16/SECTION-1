@@ -1,0 +1,10 @@
+
+
+.my-card-top{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 70%;
+    border: 7px solid blueviolet;
+    
+  }

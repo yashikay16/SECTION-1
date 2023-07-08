@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      .my-card-top{
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+      .my-title{
+        color: blueviolet;
+      }
+      @media screen and(max-width: 500px){
+        .my-title{
+        color: rgb(41, 191, 43);
+      }
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <header class="" style="background-size: cover; background-position: top; background-image: url('https://img.freepik.com/premium-photo/headphones-smartphone-orange-background_23-2148210396.jpg');">
+        <div class="container " style="padding: 100px 0;">
+            <p class="display-4 fw-bold text-center my-title">Best Headphones from Top Brands </p>
+            <input class="form-control form-control-lg mt-5 w-75 mx-auto" />
+        </div>
+    </header>
+
+    <div class="container">
+
+    <div class="row mt-4">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+
+          <div class="my-card-top" style="background-image: url('https://www.energysistem.com/cdnassets/products/45305/principal_2000.jpg');"></div>
+            <!-- <img class="card-img-top" src="https://www.energysistem.com/cdnassets/products/45305/principal_2000.jpg" alt=""> -->
+          <div class="card-body">
+            <p class="fw-bold text-muted m-0">Boat</p>
+            <h4>Wireless Headphones</h4>
+
+            <div>
+                <i class="fas fa-star text-warning"></i>
+                <span>4.5</span>
+                <span class="fw-bold">(8354 Reviews)</span>
+            </div>
+
+            <h2 class="float-end">₹ 3999</h2>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i>&nbsp; Add to Cart</button>
+            <button class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="https://www.sony.co.in/image/67c435ccf7da70b63f8d6195ac04269c?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320" alt="">
+          <div class="card-body">
+            <p class="fw-bold text-muted m-0">Boat</p>
+            <h4>Wireless Headphones</h4>
+
+            <div>
+                <i class="fas fa-star text-warning"></i>
+                <span>4.5</span>
+                <span class="fw-bold">(8354 Reviews)</span>
+            </div>
+
+            <h2 class="float-end">₹ 3999</h2>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i>&nbsp; Add to Cart</button>
+            <button class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="https://www.energysistem.com/cdnassets/products/45305/principal_2000.jpg" alt="">
+          <div class="card-body">
+            <p class="fw-bold text-muted m-0">Boat</p>
+            <h4>Wireless Headphones</h4>
+
+            <div>
+                <i class="fas fa-star text-warning"></i>
+                <span>4.5</span>
+                <span class="fw-bold">(8354 Reviews)</span>
+            </div>
+
+            <h2 class="float-end">₹ 3999</h2>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i>&nbsp; Add to Cart</button>
+            <button class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="https://www.energysistem.com/cdnassets/products/45305/principal_2000.jpg" alt="">
+          <div class="card-body">
+            <p class="fw-bold text-muted m-0">Boat</p>
+            <h4>Wireless Headphones</h4>
+
+            <div>
+                <i class="fas fa-star text-warning"></i>
+                <span>4.5</span>
+                <span class="fw-bold">(8354 Reviews)</span>
+            </div>
+
+            <h2 class="float-end">₹ 3999</h2>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i>&nbsp; Add to Cart</button>
+            <button class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.my-title',{
+   //  insert behavior 
+   delay: 500
+    origin: 'bottom'
+    distance:
+
+
+
+      });
+</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

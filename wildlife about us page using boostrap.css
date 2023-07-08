@@ -1,0 +1,11 @@
+ body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.5)),url("https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.5));
+    background-size: 1366px ;
+    
+} 
+/* .imgbg{
+    height: 91.3vh;
+    width: 1366px ;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.801), pink);
+} */
