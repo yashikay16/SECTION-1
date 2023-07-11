@@ -28,20 +28,30 @@
         height: 60vh;
         background-image: linear-gradient(0deg, black, #0000007c),
           url("https://img.etimg.com/thumb/msid-99669954,width-7046,height-3963,imgsize-1040534,overlay-economictimes/photo.jpg");
-        background-size: 100% 100%;
-        background-position: center;
+        background-size: 100% 110%;
+        background-position: top center;
         background-repeat: no-repeat;
         padding-top: 75px;
       
+      }
+      .card{
+        
+        /* 3d effect on bs class for */
+        transform-style: preserve-3d;
+        transform: perspective(1000px); 
+       }
+      .card-body{
+        transform : translateZ(100px);
+        /*applied on text*/
       }
     </style>
   </head>
   <body>
     <header>
       <div class="container text-center">
-        <p class="display-4 fw-bold text-white">Black Friday Sale</p>
+        <p class="display-4 fw-bold text-white mytitle">Black Friday Sale</p>
         <input type="text" class="form-control w-50  rounded-5 mx-auto" />
-        <button class="btn btn-warning rounded-5 mt-5">
+        <button class="btn btn-warning rounded-5 mt-5 mybtn">
           <i class="fa-solid fa-magnifying-glass "></i> Search Item
         </button>
       </div>
@@ -51,11 +61,11 @@
       <div class="row">
         <div class="col-md-3 mt-4">
           <div class="card shadow">
-            <img
-              class="img-fluid"
+            <div style="height: 250px; overflow: hidden;"> <img
+              class="h-100 m-auto d-block "
               src="https://www.headphonezone.in/cdn/shop/products/Headphone-Zone-Sony-WH-CH720N-19.jpg?v=1679485347&width=2048"
-              alt=""
-            />
+              alt=""/>
+            </div>
             <div class="card-body">
               <h4 class="text-muted">Sony</h4>
               <h3>Wireless Headphones</h3>
@@ -70,14 +80,15 @@
             </div>
           </div>
         </div>
-
+         <!-- overflow hidden hides extra overflowing content -->
         <div class="col-md-3 mt-4">
           <div class="card shadow">
-            <img
-              class="img-fluid"
-              src="https://www.headphonezone.in/cdn/shop/products/Headphone-Zone-Sony-WH-CH720N-19.jpg?v=1679485347&width=2048"
-              alt=""
-            />
+            <div style="height: 250px; overflow: hidden; ">
+              <img
+              class=" h-100 m-auto d-block  "
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_xzHvbNgEzjUaN79eaN8ENA7JajNpv74V28CPI2jjADMTRL8xeOsE8Byk_nDiJ8h5wnY&usqp=CAU"
+              alt="" />  
+            </div>
             <div class="card-body">
               <h4 class="text-muted">Sony</h4>
               <h3>Wireless Headphones</h3>
@@ -92,14 +103,13 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-3 mt-4">
           <div class="card shadow">
-            <img
-              class="img-fluid"
+            <div style="height: 250px; overflow: hidden;"> <img
+              class="h-100 m-auto d-block "
               src="https://www.headphonezone.in/cdn/shop/products/Headphone-Zone-Sony-WH-CH720N-19.jpg?v=1679485347&width=2048"
-              alt=""
-            />
+              alt=""/>
+            </div>
             <div class="card-body">
               <h4 class="text-muted">Sony</h4>
               <h3>Wireless Headphones</h3>
@@ -114,14 +124,13 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-3 mt-4">
           <div class="card shadow">
-            <img
-              class="img-fluid"
+            <div style="height: 250px; overflow: hidden;"> <img
+              class="h-100 m-auto d-block "
               src="https://www.headphonezone.in/cdn/shop/products/Headphone-Zone-Sony-WH-CH720N-19.jpg?v=1679485347&width=2048"
-              alt=""
-            />
+              alt=""/>
+            </div>
             <div class="card-body">
               <h4 class="text-muted">Sony</h4>
               <h3>Wireless Headphones</h3>
@@ -136,6 +145,9 @@
             </div>
           </div>
         </div>
+        
+
+        
       </div>
     </div>
 
@@ -144,5 +156,31 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // specific element on which we want to use it,use class or id,case sensitive
+      ScrollReveal().reveal('.mytitle',{
+       delay: 500,
+       origin: 'left',
+       distance: '100px',
+       opacity: 0 , 
+      });
+      ScrollReveal().reveal('.mybtn',{
+       delay: 500,
+       origin: 'bottom',
+       distance: '100px',
+       opacity: 0 , 
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+      VanillaTilt.init(document.querySelectorAll('.card'),{
+        max:10,
+        speed:500,
+        glare: true,
+      });
+
+     </script>
+ 
   </body>
 </html>
